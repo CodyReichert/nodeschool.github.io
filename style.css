@@ -1,3 +1,7 @@
+/*---------------------------*/
+/* Fonts
+/*---------------------------*/
+
 @font-face {
   font-family: 'CenturySchoolBookMono', monospace;
   src: url(yanone.eot);
@@ -17,18 +21,37 @@
         url(ubuntumonoregular.ttf) format('truetype');
 }
 
+
+/*---------------------------*/
+/* General 
+/*---------------------------*/
+
 body {
   background-color: #3a4c54;
   color: rgb(240,230,120);
   font-family: SketchBlock;
 }
 
-.content {
+.container {
+  max-width: 991px;
+  margin: auto;
+}
+
+/*.content {
   max-width: 700px;
   margin: 20px auto 30px auto;
 }
 
-.content ul { text-align: left; }
+.content ul { text-align: left; }*/
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+
+/*---------------------------*/
+/* Header 
+/*---------------------------*/
 
 #header {
   text-align: center;
@@ -81,11 +104,9 @@ h2.section {
 
 .box.small {
   cursor: pointer;
-  display: inline-block;
-  width: 280px;
-  margin-left: 34px;
-  margin-right: 34px;
-  margin-top: 0;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
 }
 
 .box .title {
@@ -256,9 +277,10 @@ h2.section {
   border-left-color: rgb(33,221,130);
 }
 
-a:link, a:visited {
-  text-decoration: none;
-}
+
+/*---------------------------*/
+/* Header buttons
+/*---------------------------*/
 
 .note,
 .note:link,
@@ -308,6 +330,77 @@ a:link, a:visited {
 }
 .note:hover:after {
   border-left-color: #4f88a2;
+}
+
+
+/*---------------------------*/
+/* Lesson buttons
+/*---------------------------*/
+
+#lessons-header {
+  margin: 50px 0;
+}
+
+#lessons-header h1 {
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.lesson-note,
+.lesson-note:link,
+.lesson-note:visited {
+  position: relative;
+  margin: auto;
+  width: 40%;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-width: 0px;
+  font-size: 1.8em;
+  color: #828282;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.lesson-note:before {
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  bottom: 0px;
+  content: '';
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #f7f7f7;
+}
+
+.lesson-note:after {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  bottom: 0px;
+  content: '';
+  border-top: 20px solid transparent;
+  border-left: 20px solid #f7f7f7;
+}
+
+.lesson-note:hover {
+  background-color: #4f88a2;
+}
+.lesson-note:hover:before {
+  border-right-color: #4f88a2;
+}
+.lesson-note:hover:after {
+  border-left-color: #4f88a2;
+}
+
+.button-lesson {
+  display: inline-block;
+}
+
+.concepts-margin {
+  margin-right: 19%;
 }
 
 #back {
@@ -381,6 +474,15 @@ body {
     margin-bottom: 10px;
 }
 
+.header-main {
+    background-image: url("./images/gridme.png");
+}
+
+
+/*---------------------------*/
+/* Footer
+/*---------------------------*/
+
 footer {
   background-color: #f3f3f3;
   padding: 25px 0;
@@ -397,8 +499,4 @@ footer a {
 
 footer a:hover {
   color: #4d7080;
-}
-
-.header-main {
-    background-image: url("./images/gridme.png");
 }

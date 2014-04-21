@@ -16,239 +16,248 @@
       <div class="color-top" style="background-color: #5bbbbd"></div>
       <!-- Logo and buttons -->
       <div class="header-main">
-          <div class="tag-line">
-              <h2>COMMUNITY DRIVEN P2P WORKSHOPS</h2>
+        <div class="tag-line">
+            <h2>COMMUNITY DRIVEN P2P WORKSHOPS</h2>
+        </div>
+        <div>
+          <div class="note button-main">
+            <p>LEFT BUTTON</p>
           </div>
-          <div>
-              <div class="note button-main">
-                  <p>LEFT BUTTON</p>
-              </div>
-              <img id="logo" width="300" src="images/nodeschool_logo.png">
-              <div class="note button-main">
-                  <p>RIGHT BUTTON</p>
-              </div>
+          <img id="logo" width="300" src="images/nodeschool_logo.png">
+          <div class="note button-main">
+            <p>RIGHT BUTTON</p>
           </div>
+        </div>
       </div>
     </div>
-    <div id="header">
-      <p class="tagline">
-        Upcoming Events
-      </p>
-      <div class="content" id="irl">
-        <p>Here are upcoming in-person free (or almost free) NodeSchool events around the world:</p>
-        <div id="events">Loading events...</div>
-        <p>See <a href="events.html">all events</a>. Anyone can host an event. <a href="host.html">Read this page to learn how!</a></p>
+    <div class="container">
+      
+      <!-- <div id="header">
+        <p class="tagline">
+          Upcoming Events
+        </p>
+        <div class="content" id="irl">
+          <p>Here are upcoming in-person free (or almost free) NodeSchool events around the world:</p>
+          <div id="events">Loading events...</div>
+          <p>See <a href="events.html">all events</a>. Anyone can host an event. <a href="host.html">Read this page to learn how!</a></p>
+        </div>
+      </div> -->
+
+      <div id="lessons-header">
+        <h1>Install these lessons and run them from your terminal to learn how to use node.js by writing code that solves realistic problems!</h1>
+        <div class="lesson-note button-lesson concepts-margin">
+            <p>CORE CONCEPTS</p>
+        </div>
+        <div class="lesson-note button-lesson">
+            <p>ELECTIVES</p>
+        </div>
       </div>
 
-      <p class="tagline">
-        Learn Node.JS with interactive lessons
-      </p>
-      <p class="description">Install these choose-your-own-adventure style lessons and learn how to use <a href="http://nodejs.org/">node.js</a>, <a href="https://npmjs.org/">npm</a> and other related tools by writing code to solve realistic problems. The lessons run in your terminal and work on Windows, Mac and Linux. Select a lesson below to get started!</p>
+      <div class="boxes">
+        <div class="box orange" data-url="learn-you-node">
+          <h2 class="title">
+            Learn You The Node.js For Much Win!
+          </h2>
+          <div class="screenshot">
+            <img src="images/learnyounode.png" alt="">
+          </div>
+          <p class="desc">
+            Learn the basics of node: asynchronous i/o, http
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/rvagg/learnyounode"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g learnyounode</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>learnyounode</code> command. Just run:
+            <pre>learnyounode</pre>
+            to play!
+          </div>
+        </div>
+
+        <div class="box red" data-url="stream-adventure">
+          <h2 class="title">
+            Stream Adventure
+          </h2>
+          <div class="screenshot">
+            <img src="images/stream-adventure.png" alt="">
+          </div>
+          <p class="desc">
+            Learn how to compose streaming interfaces
+            with <code>.pipe()</code>
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/substack/stream-adventure"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g stream-adventure</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>stream-adventure</code> command. Just run:
+            <pre>stream-adventure</pre>
+            to play!
+          </div>
+        </div>
+
+        <div class="box cyan" data-url="bytewiser">
+          <h2 class="title">
+            Bytewiser
+          </h2>
+          <div class="screenshot">
+            <img src="images/bytewiser.png" alt="">
+          </div>
+          <p class="desc">
+            Learn how to manipulate binary data in node.js and HTML5 browsers
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/maxogden/bytewiser"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g bytewiser@latest</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>bytewiser</code> command. Just run:
+            <pre>bytewiser</pre>
+            to play!
+          </div>
+        </div>
+
+        <div class="box red" data-url="functionaljs">
+          <h2 class="title">
+            Functional JavaScript
+          </h2>
+          <div class="screenshot">
+            <img src="images/functional-js.png" alt="">
+          </div>
+          <p class="desc">
+            Learn fundamental functional programming features of JavaScript in vanilla ES5.
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/timoxley/functional-javascript-workshop"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g functional-javascript-workshop@latest</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>functional-javascript-workshop</code> command. Just run:
+            <pre>functional-javascript-workshop</pre>
+            to play!
+          </div>
+        </div>
+
+
+        <div class="box orange" data-url="git-it">
+          <h2 class="title">
+            Git-it
+          </h2>
+          <div class="screenshot">
+            <img src="images/git-it.png" alt="">
+          </div>
+          <p class="desc">
+            Learn Git and GitHub basics.
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/jlord/git-it"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g git-it@latest</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>git-it</code> command. Just run:
+            <pre>git-it</pre>
+            to play!
+          </div>
+        </div>
+      </div>
+
+      <div class="boxes">
+        <h2 class="section">Electives</h2>
+
+        <div class="box cyan" data-url="levelmeup">
+          <h2 class="title">
+            Level Me Up Scotty!
+          </h2>
+          <div class="screenshot">
+            <img src="images/levelmeup.png" alt="">
+          </div>
+          <p class="desc">
+            Learn to use leveldb, a simple key/value store with a vibrant package
+            ecosystem.
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/rvagg/levelmeup"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g levelmeup</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>levelmeup</code> command. Just run:
+            <pre>levelmeup</pre>
+            to play!
+          </div>
+        </div>
+
+        <div class="box orange" data-url="expressworks">
+          <h2 class="title">
+            ExpressWorks
+          </h2>
+          <div class="screenshot">
+            <img src="images/expressworks.png" alt="">
+          </div>
+          <p class="desc expressworks">
+            Learn the basics of the Express.js framework.
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/azat-co/expressworks"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g expressworks@latest</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>expressworks</code> command. Just run:
+            <pre>expressworks</pre>
+            to play!
+          </div>
+        </div>
+        <div class="box red" data-url="promiseitwonthurt">
+          <h2 class="title">
+            Promise It Won't Hurt
+          </h2>
+          <div class="screenshot">
+            <img src="images/promiseitwonthurt.png" alt="">
+          </div>
+          <p class="desc promiseitwonthurt">
+            Learn to use promises in JavaScript to handle async operations
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/stevekane/promise-it-wont-hurt"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g promise-it-wont-hurt@latest</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>promise-it-wont-hurt</code> command. Just run:
+            <pre>promise-it-wont-hurt</pre>
+            to play!
+          </div>
+        </div>
+        <div class="box orange" data-url="asyncyou">
+          <h2 class="title">
+                Async You
+          </h2>
+          <div class="screenshot">
+            <img src="images/asyncyou.png" alt="">
+          </div>
+          <p class="desc asyncyou">
+            Learn to use the async package
+          </p>
+          <div class="expanded">
+            <a href="https://github.com/bulkan/async-you"
+            class="view-source">view-source</a>
+            Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
+            <pre>npm install -g async-you</pre>
+            (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
+            Now you have a <code>async-you</code> command. Just run:
+            <pre>async-you</pre>
+            to play!
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="boxes">
-      <h2 class="section">Core Concepts</h2>
-      <div class="box orange" data-url="learn-you-node">
-        <h2 class="title">
-          Learn You The Node.js For Much Win!
-        </h2>
-        <div class="screenshot">
-          <img src="images/learnyounode.png" alt="">
-        </div>
-        <p class="desc">
-          Learn the basics of node: asynchronous i/o, http
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/rvagg/learnyounode"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g learnyounode</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>learnyounode</code> command. Just run:
-          <pre>learnyounode</pre>
-          to play!
-        </div>
-      </div>
-
-      <div class="box red" data-url="stream-adventure">
-        <h2 class="title">
-          Stream Adventure
-        </h2>
-        <div class="screenshot">
-          <img src="images/stream-adventure.png" alt="">
-        </div>
-        <p class="desc">
-          Learn how to compose streaming interfaces
-          with <code>.pipe()</code>
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/substack/stream-adventure"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g stream-adventure</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>stream-adventure</code> command. Just run:
-          <pre>stream-adventure</pre>
-          to play!
-        </div>
-      </div>
-
-      <div class="box cyan" data-url="bytewiser">
-        <h2 class="title">
-          Bytewiser
-        </h2>
-        <div class="screenshot">
-          <img src="images/bytewiser.png" alt="">
-        </div>
-        <p class="desc">
-          Learn how to manipulate binary data in node.js and HTML5 browsers
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/maxogden/bytewiser"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g bytewiser@latest</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>bytewiser</code> command. Just run:
-          <pre>bytewiser</pre>
-          to play!
-        </div>
-      </div>
-
-      <div class="box red" data-url="functionaljs">
-        <h2 class="title">
-          Functional JavaScript
-        </h2>
-        <div class="screenshot">
-          <img src="images/functional-js.png" alt="">
-        </div>
-        <p class="desc">
-          Learn fundamental functional programming features of JavaScript in vanilla ES5.
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/timoxley/functional-javascript-workshop"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g functional-javascript-workshop@latest</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>functional-javascript-workshop</code> command. Just run:
-          <pre>functional-javascript-workshop</pre>
-          to play!
-        </div>
-      </div>
-
-
-    <div class="box orange" data-url="git-it">
-      <h2 class="title">
-        Git-it
-      </h2>
-      <div class="screenshot">
-        <img src="images/git-it.png" alt="">
-      </div>
-      <p class="desc">
-        Learn Git and GitHub basics.
-      </p>
-      <div class="expanded">
-        <a href="https://github.com/jlord/git-it"
-        class="view-source">view-source</a>
-        Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-        <pre>npm install -g git-it@latest</pre>
-        (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-        Now you have a <code>git-it</code> command. Just run:
-        <pre>git-it</pre>
-        to play!
-      </div>
-    </div>
-  </div>
-
-    <div class="boxes">
-      <h2 class="section">Electives</h2>
-
-      <div class="box cyan" data-url="levelmeup">
-        <h2 class="title">
-          Level Me Up Scotty!
-        </h2>
-        <div class="screenshot">
-          <img src="images/levelmeup.png" alt="">
-        </div>
-        <p class="desc">
-          Learn to use leveldb, a simple key/value store with a vibrant package
-          ecosystem.
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/rvagg/levelmeup"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g levelmeup</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>levelmeup</code> command. Just run:
-          <pre>levelmeup</pre>
-          to play!
-        </div>
-      </div>
-
-      <div class="box orange" data-url="expressworks">
-        <h2 class="title">
-          ExpressWorks
-        </h2>
-        <div class="screenshot">
-          <img src="images/expressworks.png" alt="">
-        </div>
-        <p class="desc expressworks">
-          Learn the basics of the Express.js framework.
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/azat-co/expressworks"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g expressworks@latest</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>expressworks</code> command. Just run:
-          <pre>expressworks</pre>
-          to play!
-        </div>
-      </div>
-      <div class="box red" data-url="promiseitwonthurt">
-        <h2 class="title">
-          Promise It Won't Hurt
-        </h2>
-        <div class="screenshot">
-          <img src="images/promiseitwonthurt.png" alt="">
-        </div>
-        <p class="desc promiseitwonthurt">
-          Learn to use promises in JavaScript to handle async operations
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/stevekane/promise-it-wont-hurt"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g promise-it-wont-hurt@latest</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>promise-it-wont-hurt</code> command. Just run:
-          <pre>promise-it-wont-hurt</pre>
-          to play!
-        </div>
-      </div>
-      <div class="box orange" data-url="asyncyou">
-        <h2 class="title">
-              Async You
-        </h2>
-        <div class="screenshot">
-          <img src="images/asyncyou.png" alt="">
-        </div>
-        <p class="desc asyncyou">
-          Learn to use the async package
-        </p>
-        <div class="expanded">
-          <a href="https://github.com/bulkan/async-you"
-          class="view-source">view-source</a>
-          Once you have <a href="http://nodejs.org">node</a> installed, open cmd.exe or Terminal.app and run:
-          <pre>npm install -g async-you</pre>
-          (Mac/Linux users: if that doesn't work try it again with 'sudo' in front).
-          Now you have a <code>async-you</code> command. Just run:
-          <pre>async-you</pre>
-          to play!
-        </div>
-      </div>
 
     <footer>
       <a target="_blank" href="https://github.com/nodeschool/discussions/issues">Ask a question</a>
