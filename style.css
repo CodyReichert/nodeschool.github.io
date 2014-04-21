@@ -266,12 +266,12 @@ a:link, a:visited {
   position: relative;
   margin: auto;
   width: 400px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
-  background-color: rgb(135,20,124);
+  background-color: #4f88a2;
   border-width: 0px;
   font-size: 1.3em;
-  color: rgb(240,80,240);
+  color: #f3f3f3;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
@@ -287,7 +287,7 @@ a:link, a:visited {
   bottom: 0px;
   content: '';
   border-bottom: 20px solid transparent;
-  border-right: 20px solid rgb(135,20,124);
+  border-right: 20px solid #4f88a2;
 }
 
 .note:after {
@@ -297,17 +297,17 @@ a:link, a:visited {
   bottom: 0px;
   content: '';
   border-top: 20px solid transparent;
-  border-left: 20px solid rgb(135,20,124);
+  border-left: 20px solid #4f88a2;
 }
 
 .note:hover {
-  background-color: rgb(155,20,144);
+  background-color: #4f88a2;
 }
 .note:hover:before {
-  border-right-color: rgb(155,20,144);
+  border-right-color: #4f88a2;
 }
 .note:hover:after {
-  border-left-color: rgb(155,20,144);
+  border-left-color: #4f88a2;
 }
 
 #back {
@@ -359,20 +359,15 @@ body {
 
 .tag-line {
     padding-top: 20px;
+    color: #6d99ae;
+    font-size: 25pt;
 }
 
 .button-main {
     display: inline-block;
     width: 33%;
-    margin-top: 4%;
-}
-
-#button-main-right {
+    margin-top: 8%;
     vertical-align: top;
-}
-
-#button-main-left {
-    float: left;
 }
 
 .logo {
@@ -402,4 +397,8 @@ footer a {
 
 footer a:hover {
   color: #4d7080;
+}
+
+.header-main {
+    background-image: url("./images/gridme.png");
 }
