@@ -97,3 +97,13 @@ function sortDates(data) {
   }
   return freshies
 }
+
+function attendButton() {
+    document.getElementById('courses').style.display = 'none';
+    document.getElementById('events').style.display =  'block';
+}
+
+function coursesButton() {
+    document.getElementById('events').style.display =  'none';
+    document.getElementById('courses').style.display = 'block';
+}
