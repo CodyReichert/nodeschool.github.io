@@ -99,11 +99,21 @@ function sortDates(data) {
 }
 
 function attendButton() {
-    document.getElementById('courses').style.display = 'none';
-    document.getElementById('events').style.display =  'block';
+    $("#courses").hide();
+    $("#events").fadeTo("fast", 1.0).show(1000);
 }
 
 function coursesButton() {
-    document.getElementById('events').style.display =  'none';
-    document.getElementById('courses').style.display = 'block';
+    $("#events").hide();
+    $("#courses").fadeTo("fast", 1.0).show(1000);
 }
+
+function coreConceptsButton() {
+    $("#electives").fadeTo("fast", 0).hide(250);
+    $("#core-concepts").fadeTo("fast", 1.0).show(750);
+}
+
+function electivesButton() {
+    $("#core-concepts").hide();
+    $("#electives").fadeTo("fast", 1.0).show(750);
+}  

@@ -46,10 +46,10 @@
     <div id="courses">
       <div id="lessons-header">
         <h1>Install these lessons and run them from your terminal to learn how to use node.js by writing code that solves realistic problems!</h1>
-        <a href="#" class="lesson-note button-lesson concepts-margin">
+        <a onClick="coreConceptsButton();" class="lesson-note button-lesson concepts-margin">
             <p>CORE CONCEPTS</p>
         </a>
-        <a href="#" class="lesson-note button-lesson float-right">
+        <a onClick="electivesButton();" class="lesson-note button-lesson float-right">
             <p>ELECTIVES</p>
         </a>
       </div>
@@ -68,6 +68,7 @@
         </div>
       </div>
 
+      <div id="core-concepts">
       <div class="boxes">
         <div class="box orange" data-url="learn-you-node">
           <h2 class="title">
@@ -181,10 +182,10 @@
           </div>
         </div>
       </div>
+      </div>
 
+      <div id="electives">
       <div class="boxes">
-        <h2 class="section">Electives</h2>
-
         <div class="box cyan" data-url="levelmeup">
           <h2 class="title">
             Level Me Up Scotty!
@@ -272,6 +273,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     </div>
 
@@ -289,8 +291,8 @@
       </ul>
     </script>
 
-    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/tabletop.js"></script>
     <script type="text/javascript" src='js/sheetsee.js'></script>
     <script type="text/javascript" src='js/table.js'></script>
