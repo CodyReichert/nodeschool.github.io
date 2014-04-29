@@ -176,7 +176,7 @@ h2.section {
 
 .box .screenshot {
   position: absolute;
-  bottom: 20px;
+  bottom: 4%;
 }
 
 .box .screenshot img {
@@ -187,13 +187,16 @@ h2.section {
 }
 
 .box .desc {
+  font-family: UbuntuMonoRegular;
+  text-align: center !important;
+  font-size: 1.7em !important;
   position: absolute;
   top: 145px;
   left: 22px;
   width: 230px;
   bottom: 0px;
   text-align: left;
-  color: rgb(255,235,40);
+  color: white;
   font-size: 1.3em;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.9);
   font-weight: bold;
@@ -217,6 +220,7 @@ h2.section {
   display: none;
 }
 
+/*
 .box:before {
   content: '';
   position: absolute;
@@ -239,6 +243,8 @@ h2.section {
   border-left: 20px solid red;
 }
 
+*/
+ 
 .box.orange {
   background-color: rgb(240,160,40);
 }
@@ -479,8 +485,9 @@ h2.section {
 }
 
 pre {
-  background-color: rgb(88,20,94);
+  background-color: #c3c3c3;
   padding: 10px;
+  text-align: left;
 }
 .desc.expressworks {
   top:130px;
@@ -533,6 +540,106 @@ body {
 
 #electives {
     display: none;
+}
+
+.event-card {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    background-color: #4f88a2;
+    border-width: 0px;
+    height: 250px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+.event-card:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    bottom: 0px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #4f88a2;
+}
+
+.event-card:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    bottom: 0px;
+    vertical-align: top;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #4f88a2;
+}
+
+.tickets {
+    bottom: 0;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.date {
+    font-size: 3em;
+}
+
+.event-top {
+    height: 30%;
+    border-bottom: solid 1.5px black;
+}
+
+.event-top:before {
+    height: 30%;
+    border-bottom: solid 1.5px black;
+}
+
+.event-top:after {
+    height: 30%;
+    border-bottom: solid 1.5px black;
+}
+
+.course {
+    border: solid 5px #2b5f76;
+    background-color: #eeeeee;
+}
+
+.course-title {
+    width: 28%;
+    height: 24%;
+    padding-left: 1%;
+    border-bottom: solid 5px #2b5f76;
+    border-right: solid 5px #2b5f76;
+    background-color: #4f88a2;
+    position: absolute;
+    z-index: 1;
+}
+
+.course-source {
+    padding-left: 1%;
+    border-bottom: solid 5px #2b5f76;
+    border-right: solid 5px #2b5f76;
+    background-color: #4f88a2;
+    height: 100%;
+    width: 28%;
+    position:absolute;
+}
+
+.course-desc {
+    width: 66%;
+    margin-left: 32%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 16px;
+    color: #555555;
+    text-align: left;
 }
 
 /*---------------------------*/
