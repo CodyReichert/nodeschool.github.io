@@ -101,19 +101,27 @@ function sortDates(data) {
 function attendButton() {
     $("#courses").hide();
     $("#events").fadeTo("fast", 1.0).show(1000);
+    $("#attend-button").attr("class", "button-main note-active");
+    $("#lesson-button").attr("class", "note button-main");
 }
 
 function coursesButton() {
     $("#events").hide();
     $("#courses").fadeTo("fast", 1.0).show(1000);
+    $("#lesson-button").attr("class", "button-main note-active");
+    $("#attend-button").attr("class", "note button-main");
 }
 
 function coreConceptsButton() {
     $("#electives").fadeTo("fast", 0).hide(250);
     $("#core-concepts").fadeTo("fast", 1.0).show(750);
+    $("#core-concepts-button").attr("class", "lesson-note-active button-lesson concepts-margin");
+    $("#electives-button").attr("class", "lesson-note button-lesson float-right");
 }
 
 function electivesButton() {
     $("#core-concepts").hide();
     $("#electives").fadeTo("fast", 1.0).show(750);
+    $("#electives-button").attr("class", "lesson-note-active button-lesson float-right");
+    $("#core-concepts-button").attr("class", "lesson-note button-lesson concepts-margin");
 }  

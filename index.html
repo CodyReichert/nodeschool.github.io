@@ -20,11 +20,11 @@
             <h2>COMMUNITY DRIVEN P2P WORKSHOPS</h2>
         </div>
         <div>
-          <div class="note button-main" onClick="coursesButton()">
+          <div id="lesson-button" style="margin-top:8%;" class="note button-main" onClick="coursesButton()">
             <p>Start a<br>lesson</p>
           </div>
           <img id="logo" width="300" src="images/nodeschool_logo.png">
-          <div class="note button-main" onClick="attendButton()">
+          <div id="attend-button" style="margin-top:8%;" class="note button-main" onClick="attendButton()">
             <p>Attend an<br>event</p>
           </div>
         </div>
@@ -46,10 +46,10 @@
     <div id="courses">
       <div id="lessons-header">
         <h1>Install these lessons and run them from your terminal to learn how to use node.js by writing code that solves realistic problems!</h1>
-        <a onClick="coreConceptsButton();" class="lesson-note button-lesson concepts-margin">
+        <a id="core-concepts-button" onClick="coreConceptsButton();" class="lesson-note button-lesson concepts-margin">
             <p>CORE CONCEPTS</p>
         </a>
-        <a onClick="electivesButton();" class="lesson-note button-lesson float-right">
+        <a id="electives-button" onClick="electivesButton();" class="lesson-note button-lesson float-right">
             <p>ELECTIVES</p>
         </a>
       </div>
