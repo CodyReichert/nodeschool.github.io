@@ -124,4 +124,4 @@ function electivesButton() {
     $("#electives").fadeTo("fast", 1.0).show(750);
     $("#electives-button").attr("class", "lesson-note-active button-lesson float-right");
     $("#core-concepts-button").attr("class", "lesson-note button-lesson concepts-margin");
-}  
+}

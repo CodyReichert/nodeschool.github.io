@@ -144,7 +144,6 @@ h2.section {
 }
 
 .box.small {
-  cursor: pointer;
   display: block;
   width: 100%;
   margin: 30px auto;
@@ -187,11 +186,11 @@ h2.section {
 }
 
 .box .desc {
-  font-family: UbuntuMonoRegular;
+  font-family: Ubuntu;
   text-align: center !important;
-  font-size: 1.7em !important;
+  font-size: 1.5em !important;
   position: absolute;
-  top: 145px;
+  top: 125px;
   left: 22px;
   width: 230px;
   bottom: 0px;
@@ -681,6 +680,7 @@ body {
     font-size: 16px;
     color: #555555;
     text-align: left;
+    font-family: Ubuntu;
 }
 
 .note-active, .note-active:link {
@@ -745,3 +745,33 @@ footer a {
 footer a:hover {
   color: #4d7080;
 }
+
+/*---------------------------*/
+/* View-Course Button
+/*---------------------------*/
+.source-button {
+  display: none;
+  position: absolute;
+  bottom: 40%;
+  left: 29%;
+  font-size: 1.7em;
+  background-color: #ff0019;
+  padding: 5px;
+  border: solid 2px #ff0019;
+  border-radius: 3px;
+  font-family: Ubuntu;
+}
+
+.course-source:hover {
+	background-color: black;
+}
+.course-source:hover .desc {
+	display: none;
+}
+.course-source:hover .source-button {
+	display: block;
+}
+.source-button a {
+	color: white;
+}
+/*------------------------------*/
